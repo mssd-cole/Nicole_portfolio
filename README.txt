@@ -8,14 +8,7 @@ HOW TO OPEN
 3. Double-click index.html in your browser.
 4. To edit code, open the folder in Visual Studio Code.
 
-HOW TO CHANGE IMAGES
-1. Open the images/ folder.
-2. Replace image_1.jpg, image_2.jpg, etc. with your own images.
-3. Keep the SAME image names to avoid editing any code.
-   If using PNG, rename to image_1.png and change the corresponding
-   src="images/image_1.jpg" to src="images/image_1.png" in index.html.
-4. For best results use landscape photos around 1200 x 750 pixels.
-5. Captions in the dummy photos are PLACEHOLDERS, not real screenshots.
+
 
 IMAGE MAP
 image_1.jpg and image_2.jpg: AppHear
@@ -23,12 +16,6 @@ image_3.jpg and image_4.jpg: TRU Information System
 image_5.jpg and image_6.jpg: Norte Venture
 image_7.jpg and image_8.jpg: Community Services Office Support
 image_9.jpg and image_10.jpg: Big G's Pizza Service Crew
-
-HOW TO EDIT PORTFOLIO CONTENT
-- index.html: all personal/project/experience text and image references.
-- style.css: all appearance, layout, colors, and mobile responsiveness.
-- script.js: carousel timing, arrows, and mobile navigation.
-- Edit YOUR_EMAIL@example.com in index.html to your real email.
 
 ADD ANOTHER IMAGE TO A PROJECT
 Inside that project's <div class="gallery-track"> add:
