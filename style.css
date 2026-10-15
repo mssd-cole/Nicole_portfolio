@@ -1,0 +1,74 @@
+/* ===== DESIGN SETTINGS =====
+   Change these colors to customize your entire portfolio. */
+:root{--ink:#132b35;--muted:#5c6c72;--paper:#f7f8f5;--white:#fff;--accent:#9be1cd;--dark:#0b252f;--line:#dce2df;--radius:13px}
+/* ===== GLOBAL STYLES ===== */
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:var(--paper);font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.65}a{color:inherit;text-decoration:none}button{font:inherit}img{display:block;max-width:100%}h1,h2,h3,p{margin-top:0}.container{width:min(1150px,calc(100% - 48px));margin-inline:auto}.section{padding:106px 0}.section-kicker,.eyebrow{letter-spacing:.16em;font-size:.74rem;font-weight:800;color:#527d77}.section h2,.contact-section h2{font-size:clamp(2.35rem,5vw,4.3rem);line-height:1.1;letter-spacing:-.055em;margin:15px 0 0}em{font-family:Georgia,serif;font-weight:400}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:36px;margin-bottom:40px}.section-heading>p{max-width:345px;color:var(--muted);margin-bottom:4px}
+/* ===== NAVIGATION ===== */
+.site-header{position:sticky;top:0;background:rgba(247,248,245,.96);border-bottom:1px solid var(--line);z-index:50;backdrop-filter:blur(12px)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:1.34rem;font-weight:800;letter-spacing:-.055em}.brand span{color:#36a98d}.nav-links{display:flex;align-items:center;gap:31px;font-size:.87rem;font-weight:700}.nav-links>a:hover{color:#26816e}.nav-contact{border:1px solid var(--ink);padding:9px 15px;border-radius:6px}.menu-toggle{display:none;background:none;border:0;font-size:1.5rem;color:var(--ink);cursor:pointer}
+/* ===== HERO ===== */
+.hero{display:grid;grid-template-columns:1.07fr .93fr;align-items:center;gap:50px;min-height:625px;padding-block:70px 85px}.eyebrow{display:flex;align-items:center;gap:8px}.status-dot{width:8px;height:8px;background:#35bd91;border-radius:50%}.hero h1{font-size:clamp(3rem,5.45vw,5.4rem);line-height:1.045;letter-spacing:-.065em;margin:25px 0}.hero h1 em{color:#278774}.hero-description{max-width:550px;color:var(--muted);font-size:1.07rem}.hero-description strong{color:var(--ink)}.hero-actions{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}.button{display:inline-flex;align-items:center;gap:22px;padding:13px 21px;border-radius:6px;font-size:.88rem;font-weight:800;transition:transform .2s}.button:hover{transform:translateY(-3px)}.button-primary{background:var(--dark);color:white}.button-outline{border:1px solid var(--ink)}.quick-facts{display:flex;align-items:center;gap:15px;margin-top:55px;color:var(--muted);font-size:.79rem}.fact-divider{width:5px;height:5px;background:#80b2a7;border-radius:50%}.hero-visual{min-height:450px;border-radius:10px;background:linear-gradient(135deg,#193d49,#102a36 57%,#287e7a);color:#d9f9ef;padding:26px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:18px 18px 0 #e0ebe6;overflow:hidden}.visual-top,.visual-bottom{display:flex;align-items:center;justify-content:space-between;font-size:.7rem;letter-spacing:.17em;font-weight:700}.small-circle{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--accent)}.visual-center{display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.1;transform:rotate(-7deg)}.visual-code{font-size:clamp(2rem,4vw,3.7rem);font-family:Georgia,serif;font-style:italic}.visual-amp{color:#77d0ba;font-size:5rem}.visual-build{font-size:clamp(2.6rem,4.4vw,4.4rem);font-weight:900;letter-spacing:-.06em}
+/* ===== ABOUT ===== */
+.about-section{background:#eaf1ec}.about-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:100px}.about-text{color:#40585e;font-size:1.04rem}.about-text p{margin-bottom:18px}.education-line{display:flex;align-items:center;gap:17px;padding-top:22px;margin-top:25px;border-top:1px solid #c7d7d0}.edu-icon{display:grid;place-items:center;background:#d3e7dc;width:43px;height:43px;border-radius:50%;color:#247b64;font-size:1.3rem}.education-line strong,.education-line small{display:block}.education-line strong{color:var(--ink)}.education-line small{font-size:.8rem;margin-top:2px}
+/* ===== PROJECT CARDS ===== */
+.project-card{display:grid;grid-template-columns:1.04fr .96fr;gap:0;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:26px}.project-info{padding:42px 40px;display:flex;flex-direction:column;align-items:flex-start}.project-meta{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:.69rem;letter-spacing:.12em;font-weight:800;color:#50756c}.pill{background:#e6f6ee;color:#276d56;border-radius:50px;padding:5px 10px;font-size:.65rem}.project-info h3{font-size:2rem;line-height:1.15;letter-spacing:-.05em;margin:25px 0 5px}.project-subtitle{font-size:.95rem;color:#357f73;font-weight:700}.project-info>p:not(.project-subtitle){color:var(--muted);font-size:.94rem}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}.tags span{font-size:.73rem;line-height:1.2;background:#eef2ef;color:#4e6967;border-radius:4px;padding:8px 10px}.text-link{margin-top:22px;font-size:.87rem;font-weight:800;color:#167d6e}.text-link:hover{text-decoration:underline}
+/* ===== CAROUSEL / IMAGE GALLERY =====
+   Add images as <img> tags inside .gallery-track in index.html.
+   The JavaScript will automatically count the photos. */
+.gallery{min-width:0;position:relative;overflow:hidden;background:#173e49;aspect-ratio:1.26;align-self:stretch}.gallery-track{height:100%;display:flex;transition:transform .55s ease}.gallery-track img{width:100%;height:100%;object-fit:cover;flex:0 0 100%}.gallery-button{position:absolute;bottom:20px;display:grid;place-items:center;width:37px;height:37px;border:1px solid rgba(255,255,255,.6);background:rgba(12,33,42,.65);color:#fff;border-radius:50%;cursor:pointer;z-index:1}.gallery-button:hover{background:#133e45}.gallery-prev{left:19px}.gallery-next{left:64px}.gallery-counter{position:absolute;bottom:20px;right:20px;color:white;background:rgba(12,33,42,.65);border-radius:4px;padding:8px 11px;font-size:.7rem;letter-spacing:.1em}
+/* ===== EXPERIENCE ===== */
+.experience-section{background:#edf3ee}.experience-card{display:grid;grid-template-columns:1fr 350px;gap:36px;align-items:center;border-top:1px solid #cbd8d2;padding:35px 0}.experience-card:last-child{border-bottom:1px solid #cbd8d2}.experience-date{color:#367d70;font-size:.7rem;font-weight:800;letter-spacing:.11em}.experience-copy h3{font-size:1.7rem;letter-spacing:-.035em;margin:12px 0 4px}.experience-place{font-size:.91rem;color:#257e71;font-weight:700}.experience-copy>p:last-child{max-width:610px;color:var(--muted)}.gallery-small{aspect-ratio:1.65;border-radius:8px}
+/* ===== SKILLS ===== */
+.skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:38px;margin-top:50px}.skill-group{padding-top:25px;border-top:1px solid #b9ccc5}.skill-number{color:#559188;font-size:.73rem;font-weight:800}.skill-group h3{font-size:1.25rem;margin:10px 0 10px}
+/* ===== CONTACT & FOOTER ===== */
+.contact-section{background:var(--dark);color:white;padding:106px 0 110px}.contact-section .section-kicker{color:#8dd7c5}.contact-section h2{font-size:clamp(3.2rem,7vw,6rem)}.contact-section h2 em{color:var(--accent)}.contact-content>p:not(.section-kicker){color:#b4d0d0;margin:24px 0}.button-light{background:var(--accent);color:#10322f}.contact-content .contact-note{font-size:.72rem;color:#88a7a9!important;margin-top:25px!important}.footer{background:#071c25;color:#aec9c6;padding:25px 0;font-size:.77rem}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+/* ===== RESPONSIVE / MOBILE ===== */
+@media(max-width:900px){.hero{grid-template-columns:1fr;gap:40px}.hero-visual{min-height:320px}.about-grid{gap:35px}.project-card{grid-template-columns:1fr}.project-card>.gallery{aspect-ratio:1.8}.experience-card{grid-template-columns:1fr 290px}}
+@media(max-width:650px){.container{width:min(100% - 32px,1150px)}.section{padding:70px 0}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:76px;left:0;right:0;background:var(--paper);padding:20px 24px;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:18px}.nav-links.open{display:flex}.hero{padding-block:55px}.hero h1{font-size:clamp(2.8rem,11vw,4rem)}.hero-visual{box-shadow:9px 9px 0 #e0ebe6;min-height:285px}.quick-facts{flex-wrap:wrap;margin-top:32px}.about-grid,.experience-card,.skills-grid{grid-template-columns:1fr}.section-heading{align-items:start;flex-direction:column;gap:12px}.project-info{padding:27px 23px}.project-card>.gallery{aspect-ratio:1.35}.experience-card{gap:16px}.gallery-small{aspect-ratio:1.7}.footer-inner{flex-direction:column;align-items:flex-start}.contact-section{padding:85px 0}}
+/* Accessibility: avoid motion for users who prefer reduced animation. */
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.gallery-track,.button{transition:none}}
+
+/* ===== CERTIFICATES =====
+   The grid shows two cards on desktop and one on smaller screens.
+   object-fit:contain keeps the full certificate visible without cropping. */
+.certificates-section{background:#eaf1ec}
+.certificates-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}
+.certificate-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;min-width:0}
+.certificate-image{display:block;background:#dce8e2;padding:18px}
+.certificate-image img{width:100%;aspect-ratio:1.414;object-fit:contain}
+.certificate-copy{padding:28px}
+.certificate-copy h3{font-size:1.5rem;line-height:1.3;margin:12px 0;letter-spacing:-.035em}
+.certificate-details{color:var(--muted);font-size:.92rem}
+.certificate-copy .text-link{display:inline-block;margin-top:8px}
+.certificate-image:focus-visible,.text-link:focus-visible{outline:3px solid #167d6e;outline-offset:3px}
+@media(max-width:900px){.nav-links{gap:18px}}
+@media(max-width:650px){.certificates-grid{grid-template-columns:1fr}.certificate-copy{padding:23px}}
+
+/* ===== ABOUT ME PROFILE PHOTO =====
+   Replace image_13.jpg with your portrait. The frame uses a 4:5 portrait ratio.
+   object-position controls the crop: try center top to keep your face visible. */
+.profile-photo{margin:30px 0 0;max-width:320px;padding:10px;background:var(--white);border:1px solid #c7d7d0;border-radius:var(--radius)}
+.profile-photo img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:7px}
+@media(max-width:650px){.profile-photo{max-width:280px}}
+
+/* ===== HEADER PROFILE =====
+   The same portrait is shared with About Me. border-radius makes it circular.
+   Adjust object-position below if your face needs a different crop. */
+.brand{display:inline-flex;align-items:center;gap:10px;flex-shrink:0}
+.brand .brand-name{color:var(--ink)}
+.brand-photo{width:40px;height:40px;border-radius:50%;object-fit:cover;object-position:center top;border:2px solid #8fb5a7;background:#d9e9e1;flex-shrink:0}
+@media(min-width:651px) and (max-width:1000px){.nav-links{gap:12px;font-size:.8rem}.nav-contact{padding:8px 10px}.brand{font-size:1.15rem}}
+@media(max-width:650px){.brand{font-size:1.2rem}.brand-photo{width:36px;height:36px}}
+
+/* ===== PROJECT SCREENSHOT FORMATS =====
+   AppHear and Norte Venture are MOBILE apps: use portrait screenshots.
+   TRU is a WEBSITE: use landscape screenshots.
+   contain shows the entire screenshot instead of cropping its edges.
+   These rules apply only to projects, leaving experience photos unchanged. */
+.project-card>.gallery-mobile{aspect-ratio:auto;min-height:490px;padding:24px 20px 72px;background:#dce8e2}
+.gallery-mobile .gallery-track{height:420px}
+.gallery-mobile .gallery-track img{height:420px;object-fit:contain}
+.project-card>.gallery-web{aspect-ratio:auto;min-height:390px;padding:24px 16px 72px;background:#dce8e2}
+.gallery-web .gallery-track{height:310px}
+.gallery-web .gallery-track img{height:310px;object-fit:contain}
+@media(max-width:900px){.project-card>.gallery-mobile{min-height:0}.project-card>.gallery-web{min-height:0}.gallery-web .gallery-track,.gallery-web .gallery-track img{height:auto;aspect-ratio:16/10}}
+@media(max-width:650px){.project-card>.gallery-mobile{padding:20px 12px 72px}.gallery-mobile .gallery-track,.gallery-mobile .gallery-track img{height:390px}.project-card>.gallery-web{padding:20px 12px 72px}}
