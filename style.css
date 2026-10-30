@@ -73,39 +73,86 @@
 @media(max-width:900px){.project-card>.gallery-mobile{min-height:0}.project-card>.gallery-web{min-height:0}.gallery-web .gallery-track,.gallery-web .gallery-track img{height:auto;aspect-ratio:16/10}}
 @media(max-width:650px){.project-card>.gallery-mobile{padding:20px 12px 72px}.gallery-mobile .gallery-track,.gallery-mobile .gallery-track img{height:390px}.project-card>.gallery-web{padding:20px 12px 72px}}
 
-/* ===== TRANSPARENT TOOL LOGO CARDS ===== */
 
+/* ===== SMALL & CLEAN TOOL LOGOS ===== */
+
+/* Each category */
+.tools-category {
+  margin-top: 24px;
+}
+
+.tools-category h3 {
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+/* Small logos aligned to the left */
+.tools-logo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px 22px;
+  margin-top: 0;
+}
+
+/* No cards, backgrounds, or borders */
 .tool-logo-card {
-  min-height: 85px;
-  padding: 10px 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 5px;
 
-  transition: transform 0.25s ease;
+  width: 65px;
+  min-height: 0;
+  padding: 4px 0;
+
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+
+  transition: transform 0.2s ease;
 }
 
-/* Logo images */
+/* Small logo size */
 .tool-logo-card img {
-  width: 10px;
-  height: 10px;
+  width: 26px;
+  height: 26px;
   object-fit: contain;
 }
 
-/* Tool names */
+/* Small text underneath */
 .tool-logo-card span {
-  font-size: 0.72rem;
-  font-weight: 600;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.3;
   color: var(--ink);
   text-align: center;
 }
 
-/* Simple hover effect */
+/* Subtle hover animation */
 .tool-logo-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-2px);
   background: transparent;
   border: none;
   box-shadow: none;
 }
+
+/* Smaller spacing on mobile */
+@media (max-width: 650px) {
+  .tools-logo-grid {
+    gap: 12px 14px;
+  }
+
+  .tool-logo-card {
+    width: 58px;
+  }
+
+  .tool-logo-card img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
