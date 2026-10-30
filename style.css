@@ -78,13 +78,6 @@
 .tool-logo-card {
   min-height: 85px;
   padding: 10px 8px;
-
-  /* Remove white background and borders */
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -96,8 +89,8 @@
 
 /* Logo images */
 .tool-logo-card img {
-  width: 38px;
-  height: 38px;
+  width: 10px;
+  height: 10px;
   object-fit: contain;
 }
 
